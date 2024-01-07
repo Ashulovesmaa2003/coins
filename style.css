@@ -335,22 +335,22 @@ video{
 
     }
     #img1{
-        width: fit-content;
-        height: fit-content;
+        min-width: fit-content;
+        min-height: fit-content;
         position: relative;
         
         border-radius: 9px;
     }
     #img3{
-        width: fit-content;
-        height: fit-content;
+        minwidth: fit-content;
+        minheight: fit-content;
         position: relative;
         
         border-radius: 9px;
     }
     #img2{
-        width: fit-content;
-        height: fit-content;
+        min-width: fit-content;
+        minheight: fit-content;
         position: relative;
         
         border-radius: 9px;
@@ -358,16 +358,23 @@ video{
     #img1 img{
         height: 28vh;
         width: 28vh;
+       object-fit: fill;
+        
         
     }
     #img2 img{
         height: 28vh;
         width: 28vh;
+        object-fit: fill;
+        
         
     }
     #img3 img{
         height: 28vh;
         width: 28vh;
+        object-fit: fill;
+        
+        
         
     }
     #page2real{
