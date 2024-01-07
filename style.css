@@ -312,21 +312,21 @@ video{
     }
     #img1{
         height: 28vh;
-        
+        width: 28vh;
         position: relative;
         overflow: hidden;
         border-radius: 9px;
     }
     #img3{
         height: 28vh;
-        
+        width: 28vh;
         position: relative;
         overflow: hidden;
         border-radius: 9px;
     }
     #img2{
         height: 28vh;
-       
+        width: 28vh;
         position: relative;
         overflow: hidden;
         border-radius: 9px;
