@@ -334,17 +334,17 @@ video{
     #img1 img{
         height: 28vh;
         width: 28vh;
-        object-fit: cover;
+        object-fit: fit;
     }
     #img2 img{
         height: 28vh;
         width: 28vh;
-        object-fit: cover;
+        object-fit: fit;
     }
     #img3 img{
         height: 28vh;
         width: 28vh;
-        object-fit: cover;
+        object-fit: fit;
     }
     #page2real{
         height: 100%;
