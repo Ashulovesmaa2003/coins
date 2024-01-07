@@ -314,37 +314,37 @@ video{
         height: 28vh;
         width: 28vh;
         position: relative;
-        overflow: hidden;
+        
         border-radius: 9px;
     }
     #img3{
         height: 28vh;
         width: 28vh;
         position: relative;
-        overflow: hidden;
+        
         border-radius: 9px;
     }
     #img2{
         height: 28vh;
         width: 28vh;
         position: relative;
-        overflow: hidden;
+        
         border-radius: 9px;
     }
     #img1 img{
         height: 28vh;
         width: 28vh;
-        object-fit: fit;
+        object-fit: cover;
     }
     #img2 img{
         height: 28vh;
         width: 28vh;
-        object-fit: fit;
+        object-fit: cover;
     }
     #img3 img{
         height: 28vh;
         width: 28vh;
-        object-fit: fit;
+        object-fit: cover;
     }
     #page2real{
         height: 100%;
