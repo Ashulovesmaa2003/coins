@@ -276,6 +276,14 @@ video{
         font-weight: 500;
 
     }
+    #chamber1 {
+        min-height: 100%;
+        padding: 2vh;
+        display: block;
+        
+        justify-content: center;
+        
+    }
     #text{
         height: 3vh;
         width: fit-content;
@@ -305,7 +313,7 @@ video{
     #chamber2 img{
         width: 23vh;
         height: 24vh;
-        object-fit: cover;
+        object-fit: fill;
     }
     #first{
     
@@ -356,23 +364,25 @@ video{
         border-radius: 9px;
     }
     #img1 img{
-        height: fit-content;
-        width: fit-content;
+        height: 300px;
+        width: 300px;
+        object-fit: fill;
         
         
         
     }
     #img2 img{
-        height: fit-content;
-        width: fit-content;
+        height: 300px;
+        width: 300px;
+        object-fit: fill;
       
         
         
     }
     #img3 img{
-        height: fit-content;
-        width: fit-content;
-        
+        height: 300px;
+        width: 300px;
+        object-fit: fill;
         
         
         
