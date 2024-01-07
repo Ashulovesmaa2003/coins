@@ -279,14 +279,17 @@ video{
     #chamber1 {
         min-height: 100%;
         padding: 2vh;
-        display: block;
+        display: flex
+        flex-direction: column;
+        gap: 3vh;
+        justify-content: space-evenly;
         
-        justify-content: center;
         
     }
     #text{
         height: 3vh;
         width: fit-content;
+        position: relative;
 
     }
     #text h1 {
@@ -308,6 +311,8 @@ video{
     #chamber2{
         height: 23vh;
         width: 23vw;
+        display: flex;
+        justify-content: center;
         position: relative;
     }
     #chamber2 img{
@@ -339,6 +344,7 @@ video{
         padding:6px 3px;
         display: flex;
         justify-content: space-evenly;
+        
     
 
     }
@@ -352,7 +358,7 @@ video{
     #img3{
         min-width: fit-content;
         min-height: fit-content;
-        
+        background-size: cover;
         
         border-radius: 9px;
     }
@@ -398,7 +404,7 @@ video{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        
         z-index: 10;
    
     }
