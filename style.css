@@ -251,8 +251,7 @@ video{
 
 
 }
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
     #hellocoins h1{
         font-size: 6vh;
@@ -273,26 +272,55 @@ video{
         height: 24vh;
 
     }
-    #img1,#img2,#img3{
-        height: 18vh;
-        width: 18vh;
+    #img1{
+        height: 28vh;
+        width: 28vw;
         position: relative;
         overflow: hidden;
         border-radius: 9px;
     }
-    #img1 img,#img2 img,#img3 img{
-        height: 18vh;
-        width: 18vh;
+    #img3{
+        height: 28vh;
+        width: 28vw;
+        position: relative;
+        overflow: hidden;
+        border-radius: 9px;
+    }
+    #img2{
+        height: 28vh;
+        width: 28vw;
+        position: relative;
+        overflow: hidden;
+        border-radius: 9px;
+    }
+    #img1 img{
+        height: 28vh;
+        width: 28vw;
+    }
+    #img2 img{
+        height: 28vh;
+        width: 28vw;
+    }
+    #img3 img{
+        height: 28vh;
+        width: 28vw;
+    }
+    #page2real{
+        height: 50vh;
+        width: 100vw;
         
-        
+    }
+    #page2{
+        height: 70vh;
+        width: 100vw
+    }
+    #page3{
+        height: 100vh;
+        width: 100vw;
     }
 
     /* Add more responsive styles as needed */
 }
 
 /* Rest of your existing styles */
-#main {
-    max-width: 100%;
-    overflow: hidden;
-    color: white;
-}
+
