@@ -216,7 +216,23 @@ video{
     
 
 }
-#img1,#img2,#img3{
+#img1{
+    height: 32vh;
+    width: 30vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    
+}
+#img2{
+    height: 32vh;
+    width: 30vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    
+}
+#img3{
     height: 32vh;
     width: 30vh;
     position: relative;
@@ -252,17 +268,26 @@ video{
 
 }
 @media (max-width: 600px) {
-
+    
     #hellocoins h1{
         font-size: 6vh;
         font-weight: 500;
+
+    }
+    #text{
+        height: fit-content;
+        width: fit-content;
 
     }
     #text h1 {
         font-size: 4vh;
         font-weight: 400;
     }
+    #text2{
+        height: fit-content;
+        width: fit-content;
 
+    }
     #text2  h1{
         font-size: 3vh;
         font-weight: 400;
@@ -275,6 +300,7 @@ video{
     #img1{
         height: 28vh;
         width: 28vw;
+        object-fit: contain;
         position: relative;
         overflow: hidden;
         border-radius: 9px;
@@ -296,14 +322,17 @@ video{
     #img1 img{
         height: 28vh;
         width: 28vw;
+        object-fit: contain;
     }
     #img2 img{
         height: 28vh;
         width: 28vw;
+        object-fit: contain;
     }
     #img3 img{
         height: 28vh;
         width: 28vw;
+        object-fit: contain;
     }
     #page2real{
         height: 50vh;
@@ -323,4 +352,8 @@ video{
 }
 
 /* Rest of your existing styles */
-
+#main {
+    max-width: 100%;
+    overflow: hidden;
+    color: white;
+}
