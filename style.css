@@ -118,51 +118,72 @@ video{
     height: 100%;
     padding: 2vh;
     display: flex;
+    padding: 2vh 2vh;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+   
+    overflow: hidden;
+}
+#text{
+    height: fit-content;
+
+    
+    
+}
+#text2{
+    height: fit-content;
+    
+}
+#chamber1 {
+    height: 100%;
+    padding: 2vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 10;
-}
-
-#chamber1 {
-    width: 100%;
-    padding: 2vh;
-    display: block;
-    display: block;
-    align-items: flex-start;
 }
 
 #text h1 {
-    font-size: 6vh;
+    font-size: 12vh;
+    font-weight: 800;
 }
 
 #text2 h1 {
-    font-size: 3vh;
+    font-size: 8vh;
     padding: 1vh 0;
+    font-weight: 500;
 }
 
 #chamber2 {
-    width: 100%;
-    height: fit-content;
-    padding: 3vh 2vh;
+    
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
 }
 
 #chamber2 img {
-    height: 20vh;
-    width: 20vh;
+    height: 60vh;
+    width: 60vh;
     opacity: 0;
+    object-fit: cover;
+
 }
 
 
 #page3{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     z-index: 10;
-    padding: 2vh 4vh;
+    padding: 2vh 3vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     gap: 3vw;
+    
     
 
 }
@@ -172,6 +193,7 @@ video{
     padding: 2vh 2vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     
 }
 #second{
@@ -180,6 +202,7 @@ video{
     padding: 2vh 2vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
    
 
 }   
@@ -190,6 +213,7 @@ video{
     padding: 2vh 2vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     
 
 }
@@ -311,21 +335,21 @@ video{
 
     }
     #img1{
-        height: 28vh;
+        min-height: 28vh;
         width: 28vh;
         position: relative;
         
         border-radius: 9px;
     }
     #img3{
-        height: 28vh;
+        min-height: 28vh;
         width: 28vh;
         position: relative;
         
         border-radius: 9px;
     }
     #img2{
-        height: 28vh;
+        min-height: 28vh;
         width: 28vh;
         position: relative;
         
@@ -352,7 +376,7 @@ video{
         
     }
     #page2{
-        height: 100%;
+        min-height: 100%;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -374,6 +398,7 @@ video{
 
     /* Add more responsive styles as needed */
 }
+
 
 
 
