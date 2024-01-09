@@ -1,3 +1,218 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: GeneralSans-Regular;
+}
+
+#main {
+    max-width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+#cursor {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 224, 250);
+    opacity: 0.7;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    transition: all linear 0.1s;
+}
+
+video {
+    min-height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    object-fit: cover;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100%;
+    z-index: 10;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hellocoins {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#hellocoins h1 {
+    font-size: 8vw;
+    font-weight: 700;
+    opacity: 0.7;
+    color: black;
+}
+
+#hellocoins h1:hover {
+    color: rgba(216, 112, 147, 0.844);
+    font-size: 10vw;
+}
+
+#page2real {
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    padding: 15vh 5vh;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h2 {
+    display: inline-block;
+    font-size: 7vh;
+    font-weight: 900;
+    font-family: gilroy;
+    -webkit-text-stroke: 1px #95C11E;
+    color: transparent;
+    transition: all linear 0.5s;
+}
+
+#scroller h2:hover {
+    color: goldenrod;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page2 {
+    width: 100%;
+    min-height: 100%;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#text {
+    height: auto;
+    padding: 2vh;
+}
+
+#text2 {
+    height: auto;
+    padding: 2vh;
+}
+
+#chamber1 {
+    height: auto;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text h1 {
+    font-size: 7vh;
+    font-weight: 800;
+}
+
+#text2 h1 {
+    font-size: 4vh;
+    padding: 1vh 0;
+    font-weight: 500;
+}
+
+#chamber2 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chamber2 img {
+    height: 30vh;
+    width: 30vh;
+    opacity: 0;
+    object-fit: cover;
+    transition: all linear 0.1s;
+}
+
+#page3 {
+    width: 100%;
+    min-height: 100%;
+    z-index: 10;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#first,
+#second,
+#third {
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#img1,
+#img2,
+#img3 {
+    height: 30vh;
+    width: 40vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    
+}
+
+#img1 img,
+#img2 img,
+#img3 img {
+    height: 22vh;
+    width: 23vh;
+    opacity: 0;
+    transition: all linear 0.2s;
+    object-fit: fill;
+   
+    
+}
+
+*/
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +249,7 @@ video{
 }
 #page1{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     z-index: 10;
     padding: 2vh 2vh;
     display: flex;
@@ -115,12 +330,13 @@ video{
 
 #page2 {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     padding: 2vh;
     display: flex;
+    
     padding: 2vh 2vh;
     justify-content: space-evenly;
-    align-items: center;
+    
     z-index: 10;
    
     overflow: hidden;
@@ -276,138 +492,94 @@ video{
         font-weight: 500;
 
     }
-    #chamber1 {
-        min-height: 100%;
+    
+    #text {
+        height: auto;
         padding: 2vh;
-        display: flex
+    }
+    
+    #text2 {
+        height: auto;
+        padding: 2vh;
+    }
+    #chamber1 {
+        height: auto;
+        padding: 2vh;
+        display: flex;
         flex-direction: column;
-        gap: 3vh;
-        justify-content: space-evenly;
-        
-        
+        justify-content: center;
+        align-items: center;
     }
-    #text{
-        height: 3vh;
-        width: fit-content;
-        position: relative;
-
-    }
+    
     #text h1 {
-        font-size: 3vh;
-        font-weight: 400;
-        position: relative;
+        font-size: 7vh;
+        font-weight: 800;
     }
-    #text2{
-        height: 3vh;
-        width: fit-content;
-        position: relative;
-      
-    }
-    #text2  h1{
-        font-size: 2vh;
-        font-weight: 400;
-        
+    
+    #text2 h1 {
+        font-size: 4vh;
+        padding: 1vh 0;
+        font-weight: 500;
     }
     #chamber2{
         height: 23vh;
         width: 23vw;
-        display: flex;
-        justify-content: center;
         position: relative;
     }
     #chamber2 img{
         width: 23vh;
         height: 24vh;
+        object-fit: cover;
+    }
+    #first,
+    #second,
+    #third {
+        width: 100%;
+        padding: 2vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    
+    #img1,
+    #img2,
+    #img3 {
+        height: 30vh;
+        width: 40vh;
+        position: relative;
+        overflow: hidden;
+        border-radius: 9px;
+    }    
+    #img1 img,
+    #img2 img,
+    #img3 img {
+        height: 20h;
+        width: 23vh;
+        opacity: 0;
+        transition: all linear 0.2s;
         object-fit: fill;
-    }
-    #first{
-    
-        width: 100%;
-        padding:6px 3px;
-        display: flex;
-        justify-content: space-evenly;
-        
-    }
-    #second{
-    
-        width: 100%;
-        padding:6px 3px;
-        display: flex;
-        justify-content: space-evenly;
    
-
-    }   
-
-    #third{
-   
-        width: 100%;
-        padding:6px 3px;
-        display: flex;
-        justify-content: space-evenly;
-        
     
+   }
 
-    }
-    #img1{
-        min-width: fit-content;
-        min-height: fit-content;
-        
-        
-        border-radius: 9px;
-    }
-    #img3{
-        min-width: fit-content;
-        min-height: fit-content;
-        background-size: cover;
-        
-        border-radius: 9px;
-    }
-    #img2{
-        min-width: fit-content;
-        minheight: fit-content;
-        
-        
-        border-radius: 9px;
-    }
-    #img1 img{
-        height: 300px;
-        width: 300px;
-        object-fit: fill;
-        
-        
-        
-    }
-    #img2 img{
-        height: 300px;
-        width: 300px;
-        object-fit: fill;
-      
-        
-        
-    }
-    #img3 img{
-        height: 300px;
-        width: 300px;
-        object-fit: fill;
-        
-        
-        
-    }
     #page2real{
         height: 100%;
         width: 100%;
         
     }
-    #page2{
-        min-height: 100%;
+    #page2 {
         width: 100%;
+        min-height: 100%;
+        padding: 2vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        
+        justify-content: center;
+        align-items: center;
         z-index: 10;
-   
+        overflow: hidden;
     }
+    
     #page3{
         height: 100%;
         width: 100%;
@@ -422,6 +594,10 @@ video{
 
     /* Add more responsive styles as needed */
 }
+
+
+
+
 
 
 
